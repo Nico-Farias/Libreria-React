@@ -1,0 +1,40 @@
+.conteinerProducts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.conteinerProducts .products {
+  border: 2px solid red;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #eba0b0;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.conteinerProducts .imgProducts {
+  max-width: 250px;
+  max-height: 250px;
+  margin-bottom: 1rem;
+}
+
+.conteinerProducts .titleProducts {
+  height: 8rem;
+}
+
+.conteinerProducts .priceProducts {
+  font-weight: bold;
+  color: green;
+  font-size: 1.5rem;
+}
+
+.conteinerProducts .btnCarrito {
+  margin-top: 1rem;
+  background-color: green;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+/*# sourceMappingURL=style.css.map */

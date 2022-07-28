@@ -1,0 +1,40 @@
+.conteinerProducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+
+
+    .products {
+        border: 2px solid red;
+        border-radius: 2rem;
+        text-align: center;
+        background-color: rgb(235, 160, 176);
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .imgProducts {
+        max-width: 250px;
+        max-height: 250px;
+        margin-bottom: 1rem;
+    }
+
+    .titleProducts {
+        height: 8rem;
+    }
+
+    .priceProducts {
+        font-weight: bold;
+        color: green;
+        font-size: 1.5rem;
+    }
+
+    .btnCarrito {
+        margin-top: 1rem;
+        background-color: green;
+        border-radius: 2rem;
+        padding: 0 1rem;
+    }
+
+
+}

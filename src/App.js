@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ThemeProvider from 'react-bootstrap/ThemeProvider'
+import './App.scss';
+import Carrusel from './components/carrusel';
+import Footer from './components/footer';
+import Secccion from './components/section';
+import Navegacion from './components/nav';
+import Main from './components/main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} minBreakpoint="xxs">
+      <div className="App ">
+        <header>
+          <Navegacion />
+          <Carrusel />
+        </header>
+        <main>
+          <Main />
+        </main>
+        <section>
+          <Secccion />
+        </section>
+
+        <footer>
+          <Footer />
+        </footer>
+
+      </div>
+    </ThemeProvider>
+
   );
 }
 

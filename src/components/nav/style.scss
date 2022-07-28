@@ -1,0 +1,73 @@
+.navbar {
+
+    .titlePag {
+        font-weight: bold;
+        font-size: 2rem;
+        color: rgb(153, 240, 24);
+    }
+
+    .paginacion {
+        font-weight: 900;
+        font-size: 1.2rem;
+
+    }
+
+    .logoLibreria {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(247, 233, 233);
+        border-radius: 5rem;
+        border: 2px outset rgb(59, 197, 59);
+        padding: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    .carrito {
+        background-color: white;
+        text-decoration: none;
+        border: 2px outset rgb(194, 243, 15);
+        border-radius: 2rem;
+    }
+
+    .carritoImg {
+        width: 50px;
+        margin: 1rem;
+    }
+
+    .verCarrito {
+        display: none;
+    }
+
+
+
+
+    .contadorCarrito {
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        color: black;
+        background-color: rgb(105, 160, 22);
+
+
+
+    }
+
+
+
+
+    @media (max-width:992px) {
+
+        .carritoImg,
+        .contadorCarrito {
+            display: none;
+        }
+
+        .verCarrito {
+            display: contents;
+        }
+    }
+
+
+}
