@@ -3,10 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Cart from '../carrito';
 import './style.scss'
 
 
+
+
 export default function Navegacion() {
+
+
+
     return (
         <Navbar className='navbar' collapseOnSelect expand="lg" variant="dark">
             <Container>
@@ -18,7 +24,7 @@ export default function Navegacion() {
                     <Nav className="me-auto paginacion">
                         <Nav.Link href="#features">Promociones</Nav.Link>
                         <Nav.Link href="#pricing">Contacto</Nav.Link>
-                        <NavDropdown title="Categorias destacadas" id="collasible-nav-dropdown">
+                        <NavDropdown title="Categorias destacadas" id="collasible-nav-dropdown categorias">
                             <NavDropdown.Item href="#action/3.1">Romance</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
                                 Ficcion
@@ -27,25 +33,9 @@ export default function Navegacion() {
                             <NavDropdown.Divider />
 
                         </NavDropdown>
-                        <Nav.Link className='verCarrito' href="#pricing">Ver carrito</Nav.Link>
+
                     </Nav>
-                    <Nav>
 
-                        <Nav.Link className='contenedorCarrito' eventKey={2} href="#memes">
-
-
-
-                            <button type="button" class="carrito position-relative">
-                                <img className='carritoImg' id='carrito' src="img/carrito.png"></img>
-                                <span class=" contadorCarrito position-absolute top-0 start-100 translate-middle p-2  border border-light rounded-circle">1
-
-                                </span>
-                            </button>
-
-
-
-                        </Nav.Link>
-                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar >

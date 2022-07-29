@@ -1,0 +1,56 @@
+.carritoContenedorInterno {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 60% 15% 10%;
+      grid-template-columns: 15% 60% 15% 10%;
+  background-color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+}
+
+.carritoContenedorInterno img {
+  border: 1px solid black;
+  width: 80px;
+  height: 100px;
+}
+
+.carritoContenedorInterno h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.carritoContenedorInterno p {
+  font-weight: bold;
+}
+
+.carritoContenedorInterno .btnAyQ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carritoContenedorInterno .btnAyQ button {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+}
+
+.carritoContenedorInterno .btnAyQ .agregar {
+  color: green;
+  margin-top: 0;
+}
+
+.carritoContenedorInterno .btnAyQ .quitar {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

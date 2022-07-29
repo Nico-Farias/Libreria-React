@@ -333,7 +333,7 @@ const ProductsData = [
         "cantidad": 0
     },
     {
-        "id": "38",
+        "id": "39",
         "title": "Red, la novela",
         "categoria": "infantil",
         "image": "img/imgP/descarga (5).jpg",

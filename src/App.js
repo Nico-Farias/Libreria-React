@@ -7,26 +7,34 @@ import Footer from './components/footer';
 import Secccion from './components/section';
 import Navegacion from './components/nav';
 import Main from './components/main';
+import CartProvider from './Context/CartContext';
+import Cart from './components/carrito/index';
 
 function App() {
   return (
     <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} minBreakpoint="xxs">
       <div className="App ">
-        <header>
-          <Navegacion />
-          <Carrusel />
-        </header>
-        <main>
-          <Main />
-        </main>
-        <section>
-          <Secccion />
-        </section>
+        <CartProvider>
+          <header>
+            <Navegacion />
+            <Carrusel />
+            <Cart />
+          </header>
+          <main>
 
-        <footer>
-          <Footer />
-        </footer>
 
+            <Main />
+
+
+          </main>
+          <section>
+            <Secccion />
+          </section>
+
+          <footer>
+            <Footer />
+          </footer>
+        </CartProvider>
       </div>
     </ThemeProvider>
 
