@@ -43,8 +43,21 @@
         flex-direction: column;
         background-color: white;
         width: 40rem;
+        border-radius: 2rem;
 
 
+        h2 {
+            font-weight: bold;
+        }
+
+        .total {
+            color: black;
+            font-weight: bold;
+
+            span {
+                color: green;
+            }
+        }
     }
 
     .cerrarCarrito {
@@ -55,13 +68,5 @@
 
 
     }
-
-
-
-
-
-
-
-
 
 }

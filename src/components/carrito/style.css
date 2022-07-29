@@ -40,6 +40,20 @@
           flex-direction: column;
   background-color: white;
   width: 40rem;
+  border-radius: 2rem;
+}
+
+.carrito .carritoContenedor h2 {
+  font-weight: bold;
+}
+
+.carrito .carritoContenedor .total {
+  color: black;
+  font-weight: bold;
+}
+
+.carrito .carritoContenedor .total span {
+  color: green;
 }
 
 .carrito .cerrarCarrito {

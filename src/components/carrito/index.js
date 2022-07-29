@@ -24,39 +24,44 @@ const Cart = () => {
             <div onClick={() => {
                 setCarritoOpen(!carritoOpen)
             }} >
+                <div>
+                    {carritoOpen ? (<p className="cerrarCarrito"> x </p>
 
-                {carritoOpen ? (<p className="cerrarCarrito"> - </p>
-
-                ) : (
-                    <img className='carritoImg' id='carrito' src="img/carrito.png"></img>
-                )}
-
-
-
-                {!carritoOpen && <span className=" contadorCarrito  rounded-circle">
-                    {cantidadProductos}
-
-                </span>}
-
-                {cartItem && carritoOpen && (
-                    <div className="carritoContenedor">
-                        <h2>Tu carrito</h2>
-
-                        {cartItem.length === 0 ? <p>Tu carrito esta vacio</p> : (
-                            <div>
-                                {cartItem.map((item) => (
-                                    <ItemCart key={item.id} item={item} />
-                                ))}
-                            </div>
-                        )}
-
-                        <h2>Total :${total} </h2>
-
-                    </div>
-                )}
+                    ) : (
+                        <img className='carritoImg' id='carrito' src="img/carrito.png"></img>
+                    )}
 
 
+
+                    {!carritoOpen && <span className=" contadorCarrito">
+                        {cantidadProductos}
+
+                    </span>}
+
+                </div>
             </div>
+            {cartItem && carritoOpen && (
+                <div className="carritoContenedor">
+                    <h2>Tu carrito</h2>
+
+                    {cartItem.length === 0 ? <p>Tu carrito esta vacio</p> : (
+                        <div>
+                            {cartItem.map((item, i) => (
+                                <ItemCart key={i} item={item} />
+                            ))}
+                        </div>
+                    )}
+
+                    <h2 className="total">Total: $ <span>{total}</span>  </h2>
+
+                </div>
+            )}
+
+
+
+
+
+
         </div>
 
 
